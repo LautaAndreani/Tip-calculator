@@ -1,0 +1,147 @@
+:root {
+  --bg: #c4e4e7;
+  --bgCalculator: #ffffff;
+  --Billbtns: #00474b;
+  --texts: #587b7d;
+  --hover: #26c2ad;
+  --inputs: #dfe5e9;
+  --radius: 5px;
+}
+
+* {
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: var(--bg);
+}
+/* Project */
+.title {
+  text-align: center;
+  color: var(--texts);
+}
+.main {
+  background-color: var(--bgCalculator);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.mount {
+  display: flex;
+  align-items: center;
+  background-color: none;
+  font-size: 1.5rem;
+  color: var(--texts);
+  border-radius: var(--radius);
+}
+
+.mount__dollar {
+  padding: 0 1rem;
+}
+
+.bill__title {
+  color: var(--texts);
+  font-weight: 600;
+}
+
+.bill__number {
+  width: 100%;
+  background-color: none;
+  border: none;
+  height: 3rem;
+  outline: none;
+  color: var(--Billbtns);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0 1rem;
+}
+
+/* Porcent */
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btns__tips {
+  width: 7rem;
+  padding: 10px 1px;
+  margin: 0.3rem;
+  border: none;
+  background-color: var(--Billbtns);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.btns__tips:hover {
+  background-color: var(--hover);
+  color: var(--Billbtns);
+}
+
+.custom--tips {
+  padding: 0;
+  width: 7rem;
+  text-align: right;
+  background: var(--hover);
+}
+
+.custom--tips:hover {
+  background: none;
+}
+
+::placeholder {
+  color: white;
+  padding: 0 0.5rem;
+  color: var(--Billbtns);
+}
+
+/* Total */
+
+.total {
+  margin: 2rem 0;
+  padding: 10px 20px;
+  background: var(--Billbtns);
+  border-radius: var(--radius);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total__people {
+  color: white;
+}
+
+.total__number {
+  color: var(--hover);
+  font-weight: 600;
+}
+
+span {
+  margin-top: 0.5rem;
+  display: block;
+  color: lightgray;
+}
+
+.total__btn {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: var(--hover);
+  border-radius: var(--radius);
+  height: 3rem;
+  color: var(--Billbtns);
+  font-weight: 600;
+  font-size: 1.2rem;
+}

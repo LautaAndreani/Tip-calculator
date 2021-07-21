@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Tipography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calculator tip</title>
+</head>
+
+<body>
+    <h1 class="title">Tip calculator</h1>
+    <main class="main">
+        <div class="bill">
+            <p class="bill__title">Bill</p>
+            <div class="mount">
+                <p class="mount__dollar">$</p>
+                <input type="text" placeholder="0" class="bill__number" id="bill">
+            </div>
+        </div>
+        <div class="people">
+            <p class="bill__title percet__title">Number of people</p>
+            <div class="people__mount mount">
+                <p class="mount__dollar"><img src="img/user.svg" alt=""></p>
+                <input type="text" placeholder="0" class="bill__number totalPeople" id="totalPeople">
+            </div>
+        </div>
+        <div class="porcent">
+            <p class="bill__title percet__title"> Porcent tip %</p>
+            <div class="btns">
+                <button class="btns__tips">5%</button>
+                <button class="btns__tips">10%</button>
+                <button class="btns__tips">15%</button>
+                <button class="btns__tips">25%</button>
+                <button class="btns__tips">50%</button>
+                <input type="text" placeholder="Custom" class="btns__tips custom--tips">
+            </div>
+        </div>
+        <div class="total">
+            <div class="person">
+                <p class="total__people">Tip amount <span>/person</span></p>
+                <p class="total__number" id="totalTip">$0</p>
+            </div>
+            <div class="person">
+                <p class="total__people">Total<span>/person</span></p>
+                <p class="total__number" id="totalPerson">$0</p>
+            </div>
+            <div class="person">
+                <p class="total__people">Total<span>+Tip / person</span></p>
+                <p class="total__number" id="totalPersonTip">$0</p>
+            </div>
+            <button class="total__btn">RESET</button>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
