@@ -32,7 +32,7 @@ function valueTotal(value1, value2) {
         const totalPorcent = (answer * inputBtn) / 100;
         tipTotal.innerHTML = `$ ${totalPorcent.toFixed(2)}`;
         const finallyAccount = answer + totalPorcent;
-        totalFinally.innerHTML = `$ ${finallyAccount}`;
+        totalFinally.innerHTML = `$ ${finallyAccount.toFixed(2)}`;
       });
     }
   }
