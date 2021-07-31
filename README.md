@@ -1,4 +1,3 @@
 # Tipcalculator
- Tip calculator, the user places the bill, the number of people and the tip percentage. The application answers the price per person and the tip per person.
-# View the project here
-https://lautaandreani.github.io/Tipcalculator/
+Calculadora de propinas, el usuario coloca el monto del ticket, el número de personas 
+y el porcentaje de propina. La aplicación calcula el precio por persona y la propina por persona.
